@@ -17,7 +17,7 @@ class SimpleCalculatorTest {
 
     @Test
     void add() {
-        int expected = 4;
+        int expected = 5;
         int actual = testInstance.add(2, 2);
 
         assertThat(actual).isEqualTo(expected);
