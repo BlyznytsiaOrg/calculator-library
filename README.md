@@ -1,5 +1,3 @@
-Certainly, here's a basic README for your Calculator library:
-
 # Calculator Library
 
 This is a simple Java library that provides basic arithmetic operations. The library is designed to be easy to use and includes the following functionality:
@@ -22,12 +20,18 @@ To use this library, you can include the JAR file in your Java project. You can 
 3. Build the JAR file using Maven by running the following command:
 
    ```
-   mvn package
+   ./mvnw package
    ```
 
 4. The JAR file will be generated in the `target` directory of the project.
 
 5. Add the JAR file to your Java project as an external library.
+6. Build the javadoc files using Maven by running the following command:
+
+   ```
+   ./mvnw javadoc:javadoc
+   ```
+7. The javadoc files will be generated in the `target/site/apidocs` directory of the project and open index.html
 
 ### Option 2: Download Pre-built JAR
 
