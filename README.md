@@ -38,6 +38,12 @@ To use this library, you can include the JAR file in your Java project. You can 
    ./mvnw javadoc:javadoc
    ```
 7. The javadoc files will be generated in the `target/site/apidocs` directory of the project and open index.html
+8. Build all and publish to local sonar 
+
+  ```
+   ./mvnw clean package sonar:sonar
+   ```
+
 
 ### Option 2: Download Pre-built JAR
 

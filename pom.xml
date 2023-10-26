@@ -212,4 +212,19 @@
       </plugins>
     </pluginManagement>
   </build>
+
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>0.8.7</version>
+        <configuration>
+          <dataFile>${project.build.directory}/jacoco.exec</dataFile>
+          <outputDirectory>${project.reporting.outputDirectory}/jacoco-xml</outputDirectory>
+          <output>xml</output>
+        </configuration>
+      </plugin>
+    </plugins>
+  </reporting>
 </project>
