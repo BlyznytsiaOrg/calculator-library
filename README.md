@@ -41,7 +41,7 @@ To use this library, you can include the JAR file in your Java project. You can 
 8. Build all and publish to local sonar 
 
   ```
-   ./mvnw clean package sonar:sonar
+   ./mvnw clean test jacoco:report -Dmaven.test.failure.ignore=true sonar:sonar
    ```
 
 
