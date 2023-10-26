@@ -1,5 +1,11 @@
 # Calculator Library
 
+[![Bugs](http://localhost:9000/api/project_badges/measure?project=com.levik.demolibrary%3Ademolibrary&metric=bugs&token=sqb_eb855980d655c16e95be054b0abbc49ea26ef508)](http://localhost:9000/dashboard?id=com.levik.demolibrary%3Ademolibrary)
+[![Code Smells](http://localhost:9000/api/project_badges/measure?project=com.levik.demolibrary%3Ademolibrary&metric=code_smells&token=sqb_eb855980d655c16e95be054b0abbc49ea26ef508)](http://localhost:9000/dashboard?id=com.levik.demolibrary%3Ademolibrary)
+[![Duplicated Lines (%)](http://localhost:9000/api/project_badges/measure?project=com.levik.demolibrary%3Ademolibrary&metric=duplicated_lines_density&token=sqb_eb855980d655c16e95be054b0abbc49ea26ef508)](http://localhost:9000/dashboard?id=com.levik.demolibrary%3Ademolibrary)
+[![Lines of Code](http://localhost:9000/api/project_badges/measure?project=com.levik.demolibrary%3Ademolibrary&metric=ncloc&token=sqb_eb855980d655c16e95be054b0abbc49ea26ef508)](http://localhost:9000/dashboard?id=com.levik.demolibrary%3Ademolibrary)
+[![Quality Gate Status](http://localhost:9000/api/project_badges/measure?project=com.levik.demolibrary%3Ademolibrary&metric=alert_status&token=sqb_eb855980d655c16e95be054b0abbc49ea26ef508)](http://localhost:9000/dashboard?id=com.levik.demolibrary%3Ademolibrary)
+
 This is a simple Java library that provides basic arithmetic operations. The library is designed to be easy to use and includes the following functionality:
 
 - Addition
