@@ -33,5 +33,5 @@ jobs:
     - name: Build with Maven
       run: mvn clean install
     - name: Sonar Check
-      run: echo "Hello SONAR_USERNAME"
+      run: echo "Hello $SONAR_USERNAME"
 
