@@ -8,6 +8,9 @@
 
 name: Java CI with Maven
 
+env:
+  SONAR_USERNAME: 'admin'
+
 on:
   push:
     branches: [ "main" ]
@@ -29,3 +32,6 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn clean install
+    - name: Sonar Check
+      run: echo "Hello SONAR_USERNAME"
+
