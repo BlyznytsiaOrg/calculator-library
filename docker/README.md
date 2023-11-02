@@ -16,6 +16,7 @@ docker for windows/mac
    ```
    export SONAR_USERNAME=your_username
    export SONAR_PASSWORD=your_password
+   export SONAR_HOST=http://localhost:9000
    ```
 - execute command to run test and to see the result
 
