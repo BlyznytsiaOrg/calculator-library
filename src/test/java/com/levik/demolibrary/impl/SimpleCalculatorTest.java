@@ -20,7 +20,7 @@ class SimpleCalculatorTest {
         int expected = 4;
         int actual = testInstance.add(2, 2);
 
-        assertThat(actual).isEqualTo(expected);
+        assertThat(actual).isEqualTo(3);
     }
 
     @Test
