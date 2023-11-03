@@ -10,6 +10,7 @@ name: Java CI with Maven
 
 env:
   SONAR_USERNAME: 'admin'
+  SONAR_HOST: http://13.38.83.178:9000/
 
 on:
   push:
@@ -33,5 +34,5 @@ jobs:
     - name: Build with Maven
       run: mvn clean install
     - name: Sonar Check
-      run: echo "Hello $SONAR_USERNAME"
+      run: echo "Hello $SONAR_USERNAME $SONAR_HOST"
 
