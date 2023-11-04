@@ -25,7 +25,6 @@ docker for windows/mac
   export SONAR_USERNAME=your_token
  ```
 
-
 - execute command to run test and to see the result
 
    ```
