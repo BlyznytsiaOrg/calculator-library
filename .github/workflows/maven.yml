@@ -9,6 +9,7 @@
 name: Java CI with Maven
 
 env:
+  SONAR_HOST: http://13.38.83.178:9000/
   BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
 
 on:
