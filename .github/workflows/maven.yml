@@ -9,7 +9,7 @@
 name: Java CI with Maven
 
 env:
-  SONAR_USERNAME: 5c96d3506a8c875439b0c2d97c8c23fe9255b76c
+  SONAR_USERNAME: dbf14efdb7f9c3230280d4c68f1217a0e34e071d
   SONAR_HOST: http://13.38.83.178:9000/
 
 on:
