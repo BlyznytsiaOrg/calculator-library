@@ -11,6 +11,7 @@ name: Java CI with Maven
 env:
   SONAR_USERNAME: dbf14efdb7f9c3230280d4c68f1217a0e34e071d
   SONAR_HOST: http://13.38.83.178:9000/
+  BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
 
 on:
   push:
@@ -34,5 +35,5 @@ jobs:
     - name: Build with Maven
       run: mvn clean install
     - name: Sonar Check
-      run: mvn clean test jacoco:report -Dmaven.test.failure.ignore=true sonar:sonar
+      run: mvn clean test jacoco:report -Dmaven.test.failure.ignore=true sonar:sonar -Dsonar.branch.name=${BRANCH_NAME}
 
