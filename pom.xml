@@ -35,12 +35,18 @@
       <organization>The Great Calculator</organization>
       <organizationUrl>https://www.example.2.com</organizationUrl>
     </developer>
-      <developer>
-          <name>Andrew Pikozh</name>
-          <email>pikozh13@gmail.com</email>
-          <organization>The Great Calculator</organization>
-          <organizationUrl>https://www.bobocode.com</organizationUrl>
-      </developer>
+    <developer>
+      <name>Andrew Pikozh</name>
+      <email>pikozh13@gmail.com</email>
+      <organization>The Great Calculator</organization>
+      <organizationUrl>https://www.bobocode.com</organizationUrl>
+    </developer>
+    <developer>
+      <name>Yevgen P</name>
+      <email>zhenya12@gmail.com</email>
+      <organization>The Great Calculator</organization>
+      <organizationUrl>https://www.example.com</organizationUrl>
+    </developer>
   </developers>
 
   <scm>
@@ -56,7 +62,6 @@
     <junit.version>5.9.2</junit.version>
     <asserj.version>3.24.2</asserj.version>
     <sonar.login>${env.SONAR_USERNAME}</sonar.login>
-    <sonar.password>${env.SONAR_PASSWORD}</sonar.password>
     <sonar.host.url>${env.SONAR_HOST}</sonar.host.url>
   </properties>
 

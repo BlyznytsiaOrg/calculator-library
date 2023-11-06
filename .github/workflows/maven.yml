@@ -9,8 +9,9 @@
 name: Java CI with Maven
 
 env:
-  SONAR_USERNAME: 'admin'
-  SONAR_HOST: http://13.38.83.178:9000/
+  SONAR_USERNAME: ${{ secrets.SONAR_USERNAME }}
+  SONAR_HOST: ${{ secrets.SONAR_HOST }}
+  BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
 
 on:
   push:
@@ -33,6 +34,19 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn clean install
-    - name: Sonar Check
-      run: echo "Hello $SONAR_USERNAME $SONAR_HOST"
+
+  sonar:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+      - name: Sonar Check
+        run: mvn clean test jacoco:report -Dmaven.test.failure.ignore=true sonar:sonar -Dsonar.branch.name=${BRANCH_NAME}
 
