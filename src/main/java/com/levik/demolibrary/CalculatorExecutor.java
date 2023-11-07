@@ -18,6 +18,7 @@ public class CalculatorExecutor {
         Calculator calculator = new SimpleCalculator();
 
         // Perform arithmetic operations
+        System.out.println("Great calculator");
         int result1 = calculator.add(5, 3);
         int result2 = calculator.subtract(10, 4);
         int result3 = calculator.multiply(6, 7);
