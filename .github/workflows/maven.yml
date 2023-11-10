@@ -49,4 +49,3 @@ jobs:
           cache: maven
       - name: Sonar Check
         run: mvn clean test jacoco:report -Dmaven.test.failure.ignore=true sonar:sonar -Dsonar.branch.name=${BRANCH_NAME}
-
