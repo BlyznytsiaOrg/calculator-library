@@ -13,10 +13,6 @@ env:
   SONAR_HOST: ${{ secrets.SONAR_HOST }}
   BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
 
-permissions:
-  contents: read
-  pull-requests: write
-
 on:
   push:
     branches: [ "main" ]
